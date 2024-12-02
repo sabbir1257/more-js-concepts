@@ -25,3 +25,28 @@ function checkAge() {
      }
      console.log(1111);
 }
+
+function hellow(){
+     setTimeout(() => {
+          console.log('hellow wold')
+     }, 5000)
+}
+
+hellow();
+
+function delayedGreeting(name, delayTime){
+     setTimeout(() => {
+          console.log('hellow', name)
+     }, delayTime)
+}
+
+delayedGreeting('sabbir', 5000)
+
+
+const fetc = async() => {
+     const res = await fetch('https://jsonplaceholder.typicode.com/todos/1');
+     const data = await res.json()
+     console.log(data);
+}
+
+fetc();
